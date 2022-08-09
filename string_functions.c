@@ -45,11 +45,11 @@ int _strlen(char *s)
  *
  * Return: difference between s1 and s2
  */
-int _strncmp(char *s1, char *s2, int n)~
+int _strncmp(char *s1, char *s2, int n)
 {
 	int i;
 
-	for (i = 0; s1[i] && s2[i] && i < n; i++)01~
+	for (i = 0; s1[i] && s2[i] && i < n; i++)
 	{
 		if (s1[i] != s2[i])
 			return (s1[i] - s2[i]);
@@ -73,7 +73,7 @@ char *_strdup(char *s)
 
 	len = _strlen(s);
 
-	ptr = malloc(sizeof(char) * (len + 1));~
+	ptr = malloc(sizeof(char) * (len + 1));
 		if (!ptr)
 			return (NULL);
 	for (i = 0; *s != '\0'; s++, i++)

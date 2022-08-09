@@ -8,7 +8,7 @@
  * Return: 0
  */
 
-int main(int ac, char **av, char *envp[])01~
+int main(int ac, char **av, char *envp[])
 {
 	char *line = NULL, *pathcommand = NULL, *path = NULL;
 	size_t bufsize = 0;
